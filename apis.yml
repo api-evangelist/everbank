@@ -28,6 +28,8 @@ modified: '2026-07-23'
 specificationVersion: '0.19'
 apis: []
 common:
+- type: DomainSecurity
+  url: security/everbank-domain-security.yml
 - type: Website
   url: https://www.everbank.com/
 - type: About
@@ -42,6 +44,12 @@ common:
   url: https://www.everbank.com/legal/terms-use
 - type: PrivacyPolicy
   url: https://privacy-central.securiti.ai/#/notices/b47ec243-ddfe-430d-8d01-17047bea9f8d
+- type: Login
+  url: https://secure.everbank.com/
+- type: SignUp
+  url: https://apply.everbank.com/openaccount-sb/
+- type: Pricing
+  url: https://www.everbank.com/rates
 - type: LinkedIn
   url: https://www.linkedin.com/company/everbank
 maintainers:
