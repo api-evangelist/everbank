@@ -1,0 +1,80 @@
+aid: everbank
+name: EverBank
+review:
+  question: Does EverBank expose a first-party public developer API or open-finance data-access API?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    EverBank, N.A. (Jacksonville, FL; Member FDIC; formerly TIAA Bank,
+    rebranded to EverBank in 2023) publishes NO first-party public developer
+    API and operates NO developer portal. Probes of developer.everbank.com and
+    apis.everbank.com fail DNS resolution (no such host); api.everbank.com
+    returns HTTP 404 with no documented API surface. The public site
+    (www.everbank.com, HTTP 200) markets only consumer, business, and
+    commercial banking products and contains no "for developers", API
+    reference, or downloadable OpenAPI/Swagger. No first-party OAuth2/OIDC,
+    API-key, or mTLS developer authentication model is documented because no
+    developer API exists to authenticate against.
+  openFinancePosture:
+    firstPartyDeveloperPortal: false
+    developerPortalUrl: ""
+    downloadableSpec: false
+    specProvenance: none
+    fdxParticipant: unknown
+    fdxNote: |
+      No public documentation was found stating EverBank is a Financial Data
+      Exchange (FDX) participant or that it exposes an FDX-conformant
+      consumer data-access API. Not asserted either way — recorded as unknown
+      rather than fabricated.
+    cfpb1033Posture: |
+      No published CFPB Section 1033 (Personal Financial Data Rights) or
+      data-access statement was located on everbank.com as of the review date.
+    aggregatorAccess: true
+    aggregatorNote: |
+      Consistent with most US banks, consumer-permissioned account data from
+      EverBank is reached in practice only through third-party financial data
+      aggregators (Plaid, MX, Finicity, Akoya) rather than a first-party bank
+      API. This is the honest posture: aggregator-mediated access, no
+      first-party public API surface.
+    authModel: none-documented
+  probes:
+  - url: https://developer.everbank.com
+    result: DNS resolution failure (ENOTFOUND) — no such host
+  - url: https://apis.everbank.com
+    result: DNS resolution failure — no such host
+  - url: https://api.everbank.com
+    httpStatus: 404
+    note: Host resolves but returns 404; no documented API.
+  - url: https://www.everbank.com/
+    httpStatus: 200
+    note: Consumer/business/commercial banking marketing site; no developer resources.
+  transports:
+  - protocol: REST
+    documented: false
+    note: No first-party public REST API is documented.
+  - protocol: FDX
+    documented: false
+    note: No documented FDX data-access API exposed directly by EverBank.
+sources:
+- url: https://www.everbank.com/
+  type: Website
+  note: Corporate site; confirms national bank / Member FDIC positioning, no developer area.
+- url: https://www.everbank.com/about
+  type: About
+  note: Company background; EverBank, N.A., formerly TIAA Bank.
+- url: https://www.everbank.com/security
+  type: Security
+  note: Consumer security information; no API/developer security documentation.
+- url: https://www.linkedin.com/company/everbank
+  type: LinkedIn
+  note: Official company profile (HTTP 200).
+actions:
+  apisYmlUpdated: true
+  reason: |
+    Identity-only ("built-stub") record. apis[] left empty because no real
+    first-party public API, developer portal, or downloadable specification
+    exists to harvest. Open-finance reality captured honestly as
+    aggregator-mediated access with unknown FDX participation and no published
+    1033 posture. No hosts, specs, or endpoints were invented.

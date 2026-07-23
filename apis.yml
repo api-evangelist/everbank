@@ -1,0 +1,49 @@
+aid: everbank
+url: https://raw.githubusercontent.com/api-evangelist/everbank/refs/heads/main/apis.yml
+name: EverBank
+kind: company
+description: EverBank, N.A. is a Jacksonville, Florida based national bank (Member
+  FDIC) focused on high-yield consumer deposits, business and treasury banking, and
+  commercial lending, serving customers nationwide online plus a small network of
+  financial centers in Florida, California and New York. The bank operated as TIAA
+  Bank from 2017 until 2023, when it was acquired by an investor group and reverted
+  to the EverBank brand as an independent institution. Like most US banks, EverBank
+  publishes NO first-party public developer API or developer portal; there is no
+  documented open-banking, FDX, or CFPB Section 1033 data-access API exposed
+  directly. Consumer-permissioned account data is reached only through third-party
+  aggregators (e.g. Plaid, MX, Finicity), which is the honest, non-fabricated
+  posture recorded here.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- United States
+- National Bank
+- Deposits
+- Commercial Banking
+- Open Finance
+- Data Aggregation
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://www.everbank.com/
+- type: About
+  url: https://www.everbank.com/about
+- type: Blog
+  url: https://www.everbank.com/about/news
+- type: Security
+  url: https://www.everbank.com/security
+- type: Support
+  url: https://www.everbank.com/support
+- type: TermsOfService
+  url: https://www.everbank.com/legal/terms-use
+- type: PrivacyPolicy
+  url: https://privacy-central.securiti.ai/#/notices/b47ec243-ddfe-430d-8d01-17047bea9f8d
+- type: LinkedIn
+  url: https://www.linkedin.com/company/everbank
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
