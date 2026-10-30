@@ -1,4 +1,4 @@
-# EverBank (everbank)
+# EverBank
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,50 +64,86 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-EverBank, N.A. is a Jacksonville, Florida based national bank (Member FDIC) focused on high-yield consumer deposits, business and treasury banking, and commercial lending, serving customers nationwide online plus financial centers in Florida, California, and New York. The bank operated as TIAA Bank from 2017 until 2023, when an investor group acquired it and it reverted to the EverBank brand as an independent institution.
+EverBank, N.A. is a Jacksonville, Florida based national bank (Member FDIC) focused on high-yield consumer deposits, business and treasury banking, and commercial lending, serving customers nationwide online plus a small network of financial centers in Florida, California and New York. The bank operated as TIAA Bank from 2017 until 2023, when it was acquired by an investor group and reverted to the EverBank brand as an independent institution. Like most US banks, EverBank publishes NO first-party public developer API or developer portal; there is no documented open-banking, FDX, or CFPB Section 1033 data-access API exposed directly. Consumer-permissioned account data is reached only through third-party aggregators (e.g. Plaid, MX, Finicity), which is the honest, non-fabricated posture recorded here.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/everbank/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/everbank/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · United States · National Bank · Deposits · Commercial Banking · Open Finance
 
-## Open Finance & API Posture
+## EverBank on APIs.io
 
-Like most US banks, EverBank publishes **no first-party public developer API and no developer portal**. Probes of `developer.everbank.com` and `apis.everbank.com` fail DNS resolution; `api.everbank.com` returns HTTP 404 with no documented API. The public site markets only consumer, business, and commercial banking products — there is no "for developers" section, API reference, or downloadable OpenAPI/Swagger.
+Everything profiled for EverBank is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/everbank/](https://apis.io/providers/everbank/)** — or go straight to one of the APIs or properties below.
 
-US open finance is voluntary and fragmented (no single mandated open-banking contract as in the UK/AU). For EverBank the honest reality is **aggregator-mediated access**: consumer-permissioned account data is reached in practice through third-party financial data aggregators (Plaid, MX, Finicity, Akoya) rather than a first-party bank API. No documented Financial Data Exchange (FDX) participation or published CFPB Section 1033 data-access posture was located as of this review, and neither is asserted here.
+### Published properties
 
-This is an identity-only record. See `review.yml` for the full reviewer finding.
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Tags
+#### Security (1)
 
-- Financial Services
-- Banking
-- United States
-- National Bank
-- Deposits
-- Commercial Banking
-- Open Finance
-- Data Aggregation
+Authentication, trust centre, and vulnerability disclosure.
 
-## Timestamps
+- [Everbank Domain Security](https://apis.io/security/everbank/everbank-domain-security/)
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+## Where to find this API
 
-## APIs
-
-No public first-party APIs are documented by EverBank. `apis[]` is intentionally empty rather than padded with unverified entries.
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.everbank.com/)
-- [About](https://www.everbank.com/about)
-- [Blog / Newsroom](https://www.everbank.com/about/news)
-- [Security](https://www.everbank.com/security)
+- [Pricing](https://www.everbank.com/rates)
+- [Sign up](https://apply.everbank.com/openaccount-sb/)
 - [Support](https://www.everbank.com/support)
-- [Terms of Use](https://www.everbank.com/legal/terms-use)
-- [Privacy Policy](https://privacy-central.securiti.ai/#/notices/b47ec243-ddfe-430d-8d01-17047bea9f8d)
-- [LinkedIn](https://www.linkedin.com/company/everbank)
+- [Blog](https://www.everbank.com/about/news)
+- [Security](https://www.everbank.com/security)
+- [Terms of service](https://www.everbank.com/legal/terms-use)
+- [Privacy policy](https://privacy-central.securiti.ai/#/notices/b47ec243-ddfe-430d-8d01-17047bea9f8d)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 13.9** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 7.1 |
+| Access clarity | 39.5 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.4** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/everbank/](https://apis.io/providers/everbank/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for EverBank: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/everbank/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
